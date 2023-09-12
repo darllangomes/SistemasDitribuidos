@@ -1,6 +1,6 @@
 # Projeto de Curso de Sistemas Distribuídos
 
-Este é o repositório oficial do meu projeto de curso de Sistemas Distribuídos. O objetivo deste trabalho é criar um sistema distribuído composto por pelo menos 3 componentes que se comunicam entre si de forma eficiente e escalável. O projeto é desenvolvido em JavaScript e Node.js, e utilizaremos Docker e conteirização para facilitar a implantação e o gerenciamento dos componentes distribuídos.
+Este é o repositório oficial do meu projeto de curso de Sistemas Distribuídos. O objetivo deste trabalho é criar um sistema distribuído composto por pelo menos 3 componentes que se comunicam entre si de forma eficiente e escalável. O projeto é desenvolvido em Python, utilizando Flask como framework web e MySQL como banco de dados, e utilizaremos Docker e conteirização para facilitar a implantação e o gerenciamento dos componentes distribuídos.
 
 ## Visão Geral
 
@@ -12,6 +12,9 @@ O projeto é dividido em pelo menos 3 componentes interconectados que desempenha
 
 ## Tecnologias Utilizadas
 
-- **JavaScript e Node.js**: Utilizaremos o ambiente de execução Node.js para o desenvolvimento dos componentes, permitindo um desenvolvimento rápido e eficiente.
+- **Python e Flask**: Utilizaremos Python como linguagem de programação e o framework Flask para desenvolver os componentes web do projeto.
+
+- **MySQL**: Utilizaremos o sistema de gerenciamento de banco de dados MySQL para armazenar e gerenciar os dados do sistema.
 
 - **Docker**: Utilizaremos contêineres Docker para empacotar cada componente e suas dependências, garantindo a portabilidade e simplificando a implantação em diferentes ambientes.
+
