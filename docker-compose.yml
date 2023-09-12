@@ -1,23 +1,45 @@
 version: '3'
 services:
-  db:
-    image: mysql:5.7
-    environment:
-      MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: db_example
+  
+
+
+
 
   backend1:
     build:
       context: ./backend1
     ports:
       - "5000:5000"
+    networks:
+      mynetwork:
+        ipv4_address: 172.18.0.10  # IP para o backend2
     depends_on:
       - db
+    
+
 
   backend2:
     build:
       context: ./backend2
     ports:
       - "5001:5001"
+    networks:
+      mynetwork:
+        ipv4_address: 172.18.0.11  # IP para o backend2
     depends_on:
       - db
+ 
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: db_example
+    
+
+
+networks:
+    mynetwork:
+      driver: bridge
+      ipam:
+        config:
+          - subnet: 172.18.0.0/16
